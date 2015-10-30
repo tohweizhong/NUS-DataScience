@@ -1,4 +1,4 @@
-# packages that we will need this evening:
+# packages that we will need this afternoon:
 #  @ kernlab:      for the spam dataset, originally from: https://archive.ics.uci.edu/ml/datasets/Spambase
 #  @ tree:         for decision tree construction
 #  @ randomForest: for bagging and RF
@@ -36,7 +36,7 @@ num.test    <- num.samples - num.train # 2,301
 num.var     <- ncol(spam) # 58
 
 # set up the indices
-set.seed(311015)
+set.seed(150715)
 idx       <- sample(1:num.samples)
 train.idx <- idx[seq(num.train)]
 test.idx  <- setdiff(idx,train.idx)

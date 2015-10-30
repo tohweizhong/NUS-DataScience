@@ -15,8 +15,8 @@ plot(cv.prune$size, cv.prune$dev, pch = 20, col = "red", type = "b",
      main = "Decision tree: Cross validation to find optimal size of tree",
      xlab = "Size of tree", ylab = "Misclassifications")
 
-# let's choose a tree size of 8
-best.tree.size <- 8
+# let's choose a tree size of 9
+best.tree.size <- 9
 
 # pruning (cost-complexity pruning)
 pruned.tree.mod <- prune.misclass(tree.mod, best = best.tree.size)
@@ -28,7 +28,7 @@ text(pruned.tree.mod, cex = 0.75)
 
 # now let's make some predictions
 tree.pred <- predict(pruned.tree.mod,
-                     subset(spam.test,select = -type), 
+                     subset(spam.test,select = -type),
                      type="class")
 
 # confusion matrix
