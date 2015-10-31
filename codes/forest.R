@@ -4,7 +4,6 @@
 # finally, the random forest model
 rf.mod <- randomForest(type ~ ., data = spam.train,
                        ntree = 300,
-                       proximity = TRUE,
                        importance = TRUE)
 beep()
 

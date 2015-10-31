@@ -1,7 +1,7 @@
 # packages that we will need this afternoon:
 #  @ kernlab:      for the spam dataset, originally from: https://archive.ics.uci.edu/ml/datasets/Spambase
 #  @ tree:         for decision tree construction
-#  @ randomForest: for bagging and RF
+#  @ randomForest: for RF
 #  @ beepr:        for a little beep
 #  @ pROC:         for plotting of ROC
 
